@@ -48,7 +48,8 @@ Check AUC score for validation data.
 Train random regression model.
 Try different values of max_depth, n_estimators and min_samples_leaf.
 Select values giving the best AUC score via graph.
-IMAGE
+
+![rf-graph.png](./rf-graph.png)
 
 ### 2.4 XGBoost
 Train random regression model.
@@ -60,7 +61,7 @@ Random forest model is giving slightly better results.
 We also checked with test data.
 
 ## 3. Saving model
-We train and save model with above optimal values
+We train and save model with above optimal values.
 Here is notebook [notebook_source_for_train_py.ipynb](./notebook_source_for_train_py.ipynb) 
  
 Also converted to python script [train.py](./train.py) 
