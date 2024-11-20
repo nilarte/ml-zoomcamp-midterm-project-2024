@@ -92,6 +92,15 @@ patient = {
 It will give output like following:
 
 {'heartdisease': False, 'heartdisease_probability': 0.007087624449502825}
+
 No high probability of heartdisease for patient xyz-123
+
+Or
+
+{'heartdisease': True, 'heartdisease_probability': 0.6917056277056278}
+
+High probability of heartdisease for patient xyz-456
+
+
 
 

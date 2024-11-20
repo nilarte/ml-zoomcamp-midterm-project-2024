@@ -20,6 +20,19 @@ patient = {
     "oldpeak": 0.0,
     "st_slope": "Up",
 }
+# patient = {
+#     "age": 49,
+#     "sex": "F",
+#     "chestpaintype": "NAP",
+#     "restingbp": 160,
+#     "cholesterol": 180,
+#     "fastingbs": 0,
+#     "restingecg": "Normal",
+#     "maxhr": 156,
+#     "exerciseangina": "N",
+#     "oldpeak": 1.0,
+#     "st_slope": "Flat",
+# }
 
 
 response = requests.post(url, json=patient).json()
