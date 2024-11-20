@@ -66,7 +66,7 @@ Here is notebook [notebook_source_for_train_py.ipynb](./notebook_source_for_trai
 Also converted to python script [train.py](./train.py) 
 Running this script will save model in current directory as [rf.bin](./rf.bin)
 
-## 4. Serving model locally via webservice
+## 4. Serving model locally via flask webservice
 Run [predict.py](./predict.py) 
 
 It will run prediction as websrive at url: http://localhost:9696/predict
@@ -101,6 +101,45 @@ Or
 
 High probability of heartdisease for patient xyz-456
 
+## 5. Dependency and environment management
+Here is the [Pipfile](./Pipfile) and [Pipfile.lock](./Pipfile.lock) file to manage dependencies like pandas, scikit-learn, gunicorn, flask
+
+## 6. Cotainerization and Deploying via docker
+Mainatain flask Webservice python file, Dependencies, Model etc all in self sufficient container: [Dockerfile](./Dockerfile)
+
+Instructions to run:
+
+Pull docker container from public docker image at github registry
+
+```bash
+docker pull ghcr.io/nilarte/heart_disease_prediction
+```
+
+Note: 
+You will need docker login to ghcr.io
+
+Please give your github username and personal access token to login
 
 
+ex:
+```bash
+docker login ghcr.io -u Your_Username
+```
 
+Or simply build local image using Dockerfile
+```bash
+docker build -t heart_disease_prediction .
+```
+
+Then run:
+```bash
+docker run -d -p 9696:9696 ghcr.io/nilarte/heart_disease_prediction
+```
+It will run same prediction webservice in container
+
+```bash
+@nilarte ➜ /workspaces/ml-zoomcamp-midterm-project-2024 (main) $ docker ps
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+f5c7646761f8   ghcr.io/nilarte/heart_disease_prediction   "gunicorn --bind=0.0…"   2 minutes ago   Up 2 minutes   0.0.0.0:9696->9696/tcp, :::9696->9696/tcp   sweet_matsumoto
+```
+We can test it again by running [predict-test.py](./predict-test.py) 
