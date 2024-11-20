@@ -83,6 +83,9 @@ patient = {
     "st_slope": "Up",
 }
 ```
+It will give output like following:
 
+{'heartdisease': False, 'heartdisease_probability': 0.007087624449502825}
+No high probability of heartdisease for patient xyz-123
 
 

@@ -26,6 +26,6 @@ response = requests.post(url, json=patient).json()
 print(response)
 
 if response['heartdisease'] == True:
-    print('High probability of heartdisk  %s' % patient_id)
+    print('High probability of heartdisease for patient %s' % patient_id)
 else:
-    print('No high probability of heartdisk  %s' % patient_id)
+    print('No high probability of heartdisease for patient %s' % patient_id)
