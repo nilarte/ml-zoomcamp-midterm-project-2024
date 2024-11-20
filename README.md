@@ -19,16 +19,22 @@ kagglehub.dataset_download("fedesoriano/heart-failure-prediction")
 Look for NAN values in data (There are none). 
 
 Feature importance of rest features with our target variable: heartdisease:
+
+We find mutual info for categorical features and correlation for numerical features.
+
 Top 3 most relevant categorical fetatures are
+```bash
 st_slope          0.207474
 chestpaintype     0.155988
 exerciseangina    0.131680
+```
 
-We find mutual info for categorical features and correlation for numerical features.
 Top 3 most relevant numerical fetatures are
+```bash
 oldpeak        0.403951
 maxhr          0.400421
 age            0.282039
+```
 
 ## 2. Training a model
 [notebook.ipynb](./notebook.ipynb)
