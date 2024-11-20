@@ -64,7 +64,9 @@ Running this script will save model in current directory as [rf.bin](./rf.bin)
 Run [predict.py](./predict.py) 
 
 It will run prediction as websrive at url: http://localhost:9696/predict
+
 We can test it by running [predict-test.py](./predict-test.py) 
+
 Please use default values in script or change accordingly
 ```python
 patient = {
