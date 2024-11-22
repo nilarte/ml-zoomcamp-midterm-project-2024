@@ -9,7 +9,8 @@ Dataset credit: https://www.kaggle.com/datasets/fedesoriano/heart-failure-predic
 Here are step by step details about how we build optimal model to predict heartdisease probability. 
 
 ## 1. Data preparation, cleanup and EDA
-[notebook.ipynb](./notebook.ipynb) 
+Code here: [notebook.ipynb](./notebook.ipynb)
+
 Parse downloaded dataset [heart.csv](./heart.csv) via `pandas`.
 
 Note: We are using local dataset copy here but we can download data from kaggle in notebook as well.
@@ -37,7 +38,7 @@ age            0.282039
 ```
 
 ## 2. Training a model
-[notebook.ipynb](./notebook.ipynb)
+Code here: [notebook.ipynb](./notebook.ipynb)
 ### 2.1 One-hot encoding
 Turn categorical data into binary vector
 ### 2.2 Simple Logistic regression
