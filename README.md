@@ -144,3 +144,15 @@ CONTAINER ID   IMAGE                                      COMMAND               
 f5c7646761f8   ghcr.io/nilarte/heart_disease_prediction   "gunicorn --bind=0.0…"   2 minutes ago   Up 2 minutes   0.0.0.0:9696->9696/tcp, :::9696->9696/tcp   sweet_matsumoto
 ```
 We can test it again by running [predict-test.py](./predict-test.py) 
+
+## 7. Cloud deployment
+We have deployed model on huggingface spaces as a `gradio` webservice.
+
+Here is the app.py and requirements.txt file same as on huggingface: [app.py](./app.py) [requirements.txt](./requirements.txt)
+
+Steps to use:
+
+Connect to webservice here: https://huggingface.co/spaces/nilart/ml-zoomcamp-midterm-project-2024
+Enter patient data and observe heartdisease probability
+
+![hugging-face.png](./huggingface.png)
