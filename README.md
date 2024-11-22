@@ -10,7 +10,7 @@ Here are step by step details about how we build optimal model to predict heartd
 
 ## 1. Data preparation, cleanup and EDA
 [notebook.ipynb](./notebook.ipynb) 
-Parse downloaded dataset [employee_data.csv](./employee_data.csv) via `pandas`.
+Parse downloaded dataset [heart.csv](./heart.csv) via `pandas`.
 
 Note: We are using local dataset copy here but we can download data from kaggle in notebook as well.
 ```python
@@ -153,6 +153,7 @@ Here is the app.py and requirements.txt file same as on huggingface: [app.py](./
 Steps to use:
 
 Connect to webservice here: https://huggingface.co/spaces/nilart/ml-zoomcamp-midterm-project-2024
-Enter patient data and observe heartdisease probability
+
+Enter patient data and observe heartdisease probability.
 
 ![hugging-face.png](./huggingface.png)
