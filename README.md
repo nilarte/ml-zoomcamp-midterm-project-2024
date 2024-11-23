@@ -158,3 +158,4 @@ Connect to webservice here: https://huggingface.co/spaces/nilart/ml-zoomcamp-mid
 Enter patient data and observe heartdisease probability.
 
 ![hugging-face.png](./huggingface.png)
+[demo.mp4](./demo.mp4)
