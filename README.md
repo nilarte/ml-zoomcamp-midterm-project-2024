@@ -1,6 +1,6 @@
 # ml-zoomcamp-midterm-project-2024
 ## Description
-This is DataTalksClub ML zoomcamp midterm project repo. 
+This is DataTalksClub [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) midterm project repo.
 
 It uses dataset with person details like cholestrol level, BP, ECG status etc to predict heartdisease.
 
